@@ -51,7 +51,12 @@ import daisyui from "daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+       animation: {
+    "spin-slow": "spin 2s linear infinite",
+    "spin-reverse": "spin 1.2s linear infinite reverse",
+  }
+    },
   },
   plugins: [daisyui],
   daisyui: {

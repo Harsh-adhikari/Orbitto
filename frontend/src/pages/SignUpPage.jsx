@@ -37,23 +37,24 @@ const SignUpPage = () => {
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* left side */}
-      <div className="flex flex-col justify-center items-center p-6 sm:p-12">
-        <div className="w-full max-w-md space-y-8">
+      <div className="flex flex-col items-center p-6 sm:p-12 overflow-y-auto">
+        <div className="w-full max-w-md min-h-full flex flex-col justify-center py-8">
           {/* LOGO */}
-          <div className="text-center mb-8">
-            <div className="flex flex-col items-center gap-2 group">
-              <div
-                className="size-12 rounded-xl bg-primary/10 flex items-center justify-center 
-              group-hover:bg-primary/20 transition-colors"
-              >
-                <MessageSquare className="size-6 text-primary" />
+          <div className="text-center -mt-32">
+            <div className="flex flex-col items-center group">
+              <div className="w-72 h-72 flex items-center justify-center">
+                <img
+                  src="/Orbitto-family.png"
+                  alt="Orbiito Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <h1 className="text-2xl font-bold mt-2">Create Account</h1>
-              <p className="text-base-content/60">Get started with your free account</p>
+              <h1 className="text-2xl font-bold -mt-16">Create Account</h1>
+              <p className="text-base-content/60 mt-2">Get started with your free account</p>
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6 mt-4">
             <div className="form-control">
               <label className="label">
                 <span className="label-text font-medium">Full Name</span>
@@ -131,7 +132,7 @@ const SignUpPage = () => {
             </button>
           </form>
 
-          <div className="text-center">
+          <div className="text-center mt-6">
             <p className="text-base-content/60">
               Already have an account?{" "}
               <Link to="/login" className="link link-primary">
@@ -152,4 +153,3 @@ const SignUpPage = () => {
   );
 };
 export default SignUpPage;
-

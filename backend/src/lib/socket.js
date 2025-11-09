@@ -19,6 +19,8 @@ export function getReceiverSocketId(userId) {
 // used to store online users
 const userSocketMap = {}; // {userId: socketId} this user id is key and socektId is our value 
 
+
+
 // when user connect or disconnect callback function will run 
 io.on("connection", (socket) => {
   console.log("A user connected", socket.id);
