@@ -36,13 +36,12 @@ const THEMES = [
 ];
 
 const PREVIEW_MESSAGES = [
-  { id: 1, content: "Hey! How's it going?", isSent: false },
-  {
-    id: 2,
-    content: "I'm doing great! Just working on some new features.",
-    isSent: true,
-  },
+  { id: 1, content: "Bro, did you study for the exam?", isSent: false },
+  { id: 2, content: "Yes bro, I opened the book.", isSent: true },
+  { id: 3, content: "Then?", isSent: false },
+  { id: 4, content: "Closed it immediately. Too dangerous 😎", isSent: true },
 ];
+
 
 const SettingsPage = () => {
   // This should use your actual store
@@ -128,7 +127,7 @@ const SettingsPage = () => {
                     J
                   </div>
                   <div>
-                    <h3 className="font-semibold">John Doe</h3>
+                    <h3 className="font-semibold">Justin</h3>
                     <p className="text-xs text-base-content/70 flex items-center gap-1">
                       <span className="w-2 h-2 bg-success rounded-full"></span>
                       Online

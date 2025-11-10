@@ -77,7 +77,7 @@ const NoChatSelected = () => {
         {/* Text Content */}
         <div className="space-y-4">
           <h1 className="text-3xl font-bold text-base-content">
-            Oops! No chat found!
+            Oops! No chat selected!
           </h1>
           <p className="text-base-content/70 text-lg leading-relaxed">
             Orbitto's lonely... feed it a convo before it eats your Wi-Fi! 😜
